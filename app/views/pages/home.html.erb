@@ -1,15 +1,4 @@
-<div class="container">
-  <div class="d-flex align-items-center justify-content-between">
-    <h1>My calendar</h1>
-    <%= link_to 'Create meeting', new_meeting_path, class: 'btn btn-outline-primary' %>
-  </div>
-  <%= month_calendar events: @meetings do |date, meetings| %>
-    <%= date %>
-
-    <% meetings.each do |meeting| %>
-      <div class='meeting'>
-        <%= meeting.name %>
-      </div>
-    <% end %>
-  <% end %>
+<div class="d-flex justify-content-center align-items-center home-container">
+  <%= link_to 'Monthly calendar', monthly_path, class: 'btn btn-primary mx-2' %>
+  <%= link_to 'Weekly calendar', weekly_path, class: 'btn btn-primary mx-2' %>
 </div>

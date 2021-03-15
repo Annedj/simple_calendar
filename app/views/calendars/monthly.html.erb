@@ -1,0 +1,11 @@
+<div class="container">
+  <%= month_calendar(events: @meetings, end_attribute: :end_time) do |date, meetings| %>
+    <%= date %>
+
+    <% meetings.each do |meeting| %>
+      <div class='meeting'>
+        <%= meeting.name %>
+      </div>
+    <% end %>
+  <% end %>
+</div>

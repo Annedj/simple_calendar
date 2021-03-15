@@ -22,8 +22,8 @@ ActiveStorage.start()
 import "bootstrap";
 
 // Internal imports, e.g:
-import { initFlatpickr } from "../plugins/flatpickr";
+import { initFlatpickr, initRangePickr } from "../plugins/flatpickr";
 
 document.addEventListener('turbolinks:load', () => {
-  initFlatpickr();
+  initRangePickr();
 });
