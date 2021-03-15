@@ -1,2 +1,15 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container">
+  <div class="d-flex align-items-center justify-content-between">
+    <h1>My calendar</h1>
+    <%= link_to 'Create meeting', new_meeting_path, class: 'btn btn-outline-primary' %>
+  </div>
+  <%= month_calendar events: @meetings do |date, meetings| %>
+    <%= date %>
+
+    <% meetings.each do |meeting| %>
+      <div class='meeting'>
+        <%= meeting.name %>
+      </div>
+    <% end %>
+  <% end %>
+</div>
