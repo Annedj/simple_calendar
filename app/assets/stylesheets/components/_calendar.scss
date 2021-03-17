@@ -5,14 +5,21 @@
   .today {
     background-color: #FAF3DD;
   }
+  .past {
+    color: #6c757d;
+  }
 }
 
 .meeting {
   color: white;
-  padding: 8px 24px;
+  padding: 6px 12px;
+  margin: 4px 0;
   border-radius: 4px;
-  background: #1EDD88;
+  background-color: #1EDD88;
   transition: background 0.3s ease;
+  p {
+    margin: 0;
+  }
 }
 
 .meeting:hover {
@@ -20,8 +27,11 @@
   color: white;
 }
 
-.home-container {
-  height: 90vh;
-  width: 100vw;
+.multi-days {
+  background-color: #1BC579;
+}
+
+.calendar-container {
+  margin: 0 8%;
 }
 
