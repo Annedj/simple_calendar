@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2021_03_15_171202) do
   create_table "meetings", force: :cascade do |t|
     t.string "name"
     t.datetime "start_time"
+    t.datetime "end_time"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
